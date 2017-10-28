@@ -6,7 +6,7 @@ function main()
             "object: ", vector,
             "x: ", vector.x,
             "y: ", vector.y,
-            "length: ", vector.length()
+            "length: ", vector.length
         );
     }
     let v1 = new Vector(2, 4);
@@ -63,7 +63,7 @@ Object.defineProperty(
     "length",
     {
         enumerable: false,
-        value: function()
+        get: function()
         {
             return Math.sqrt(this.x * this.x + this.y * this.y);
         }
